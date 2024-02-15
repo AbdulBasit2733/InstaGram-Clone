@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Alert,
   AlertIcon,
@@ -26,7 +25,7 @@ const Signup = () => {
       <Input
         placeholder="Email"
         fontSize={14}
-        type='email'
+        type="email"
         value={inputs.email}
         size={"sm"}
         onChange={(e) => setInputs({ ...inputs, email: e.target.value })}
@@ -34,7 +33,7 @@ const Signup = () => {
       <Input
         placeholder="Username"
         fontSize={14}
-        type='text'
+        type="text"
         value={inputs.username}
         size={"sm"}
         onChange={(e) => setInputs({ ...inputs, username: e.target.value })}
@@ -51,7 +50,7 @@ const Signup = () => {
         <Input
           placeholder="Password"
           fontSize={14}
-          type={showPassword ? "text" : 'password'}
+          type={showPassword ? "text" : "password"}
           value={inputs.password}
           size={"sm"}
           onChange={(e) => setInputs({ ...inputs, password: e.target.value })}
@@ -67,7 +66,7 @@ const Signup = () => {
         </InputRightElement>
       </InputGroup>
       {error && (
-        <Alert status='error' fontSize={13} p={2} borderRadius={4}>
+        <Alert status="error" fontSize={13} p={2} borderRadius={4}>
           <AlertIcon fontSize={12} />
           {error.message}
         </Alert>
